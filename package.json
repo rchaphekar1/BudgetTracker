@@ -5,10 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack",
-    "prestart": "npm run webpack",
-    "start": "node server.js",
-    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress",
+    "start": "./node_modules/webpack/bin/webpack.js -p --progress && node server.js",
+    "dev": "webpack-dev-server",
     "lite-server": "lite-server"
   },
   "repository": {
