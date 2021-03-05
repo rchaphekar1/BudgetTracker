@@ -43,7 +43,9 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <!-- References bundle.js file -->
   <script src="/dist/index.bundle.js"></script>
+  <!-- Registers service worker -->
   <script type="text/javascript">
     (function() {
       if("serviceWorker" in navigator) {
@@ -58,5 +60,7 @@
       }
     })();
   </script>
+  <!-- IndexedDB -->
+  <script src="db.js"></script>
 </body>
 </html>

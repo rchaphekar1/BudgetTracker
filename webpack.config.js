@@ -4,11 +4,12 @@ const path = require("path");
 const config = {
   mode: "production",
   entry: {
-    index: "./public/index.js"
+    index: "./public/index.js",
+    db: "./public/db.js"
   },
   output: {
     path: __dirname + "/public/dist",
-    filename: "index.bundle.js"
+    filename: "[name].bundle.js"
   },
   plugins: [
     new WebpackPwaManifest({
